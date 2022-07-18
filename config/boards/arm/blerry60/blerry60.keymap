@@ -30,14 +30,14 @@
 
 		fn_layer {
 // -----------------------------------------------------------------------------------------
-//   | GRAVE | F1    | F2    | F3    | F4    | F5    | F6    | F7    | F8    | F9    | F10   | F11   | F12   | DEL    |
+//   | &reset| F1    | F2    | F3    | F4    | F5    | F6    | F7    | F8    | F9    | F10   | F11   | F12   | DEL    |
 //   | BT_CLR|PROF 0 |PROF 1 |PROF 2 |PROF 3 |PROF 4 | PSCR  | SCLK  | PAUSE | TRANS | TRANS | UP    | TRANS | TRANS  |       
 //   | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | HOME  | PG_UP | LEFT  | RIGHT |         TRANS  |  
 //   | SHIFT | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | END   | PG_DN | DOWN  | TRANS |  TRANS |
 //   | TRANS | TRANS | TRANS |                        TRANS |                                  TRANS | TRANS | TRANS |
 
 			bindings = <
-    &kp GRAVE        &kp F1           &kp F2           &kp F3          &kp F4          &kp F5        &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &kp F11          &kp F12       &trans          &trans
+    &kp &reset       &kp F1           &kp F2           &kp F3          &kp F4          &kp F5        &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &kp F11          &kp F12       &trans          &trans
     &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4  &kp PSCRN        &kp SLCK         &kp PAUSE_BREAK  &trans           &trans           &kp UP           &trans        &trans      
     &trans           &trans           &trans           &trans          &trans          &trans        &trans           &trans           &kp HOME         &kp PG_UP        &kp LEFT         &kp RIGHT                      &trans
     &trans           &trans           &trans           &trans          &trans          &trans        &trans           &trans           &kp END          &kp PG_DN        &kp DOWN         &trans                         &trans
